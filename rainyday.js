@@ -529,7 +529,7 @@ RainyDay.prototype.REFLECTION_MINIATURE = function(drop) {
 	var sh = Math.min(this.REFLECTION_DROP_MAPPING_HEIGHT * 2 / this.REFLECTION_SCALEDOWN_FACTOR, this.reflected.height - sy);
 	this.context.drawImage(this.reflected,
 		// coordinates of source image
-		sx, sy + sh, sw, -sh,
+		sx, sy, sw, sh,
 		// destination
 		drop.x - drop.r1,
 		drop.y - drop.r1,
